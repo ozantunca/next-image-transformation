@@ -1,5 +1,6 @@
-FROM oven/bun:alpine
+FROM node:18
 WORKDIR /app
 COPY . .
+RUN npm install
 EXPOSE 3000
-CMD bun run start
+CMD npm start

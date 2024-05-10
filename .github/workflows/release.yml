@@ -3,10 +3,10 @@ name: release
 on:
   release:
     types: [released]
-  
+
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: "coollabsio/next-image-transformation"
+  IMAGE_NAME: "ozantunca/next-image-transformation"
 
 jobs:
   amd64:
@@ -39,7 +39,7 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
   aarch64:
-    runs-on: 
+    runs-on:
       group: aarch-runners
     steps:
       - name: Checkout

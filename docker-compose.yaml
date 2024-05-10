@@ -1,6 +1,6 @@
 services:
   api:
-    image: ghcr.io/coollabsio/next-image-transformation
+    image: ghcr.io/ozantunca/next-image-transformation
     ports:
       - "3000"
     environment:
@@ -23,7 +23,7 @@ services:
       - IMGPROXY_JPEG_PROGRESSIVE=true
       - IMGPROXY_USE_ETAG=true
     healthcheck:
-      test: [ "CMD", "imgproxy", "health" ]
+      test: ["CMD", "imgproxy", "health"]
       interval: 2s
       timeout: 10s
       retries: 5

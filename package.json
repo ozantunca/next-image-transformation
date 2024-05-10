@@ -3,8 +3,8 @@
   "module": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "bun run --watch ./index.js",
-    "start": "bun run ./index.js"
+    "dev": "node --watch ./index.js",
+    "start": "node ./index.js"
   },
   "devDependencies": {},
   "peerDependencies": {},
